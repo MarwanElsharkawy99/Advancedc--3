@@ -9,9 +9,9 @@ namespace Advancedc__3
     internal class CustomList<T> : List<T>
     {
         private List<T> items;
-        public CustomList()
+        public CustomList(List<T> l)
         {
-            items = new List<T>();
+            items = l;
         }
 
         public bool Exists(Predicate<T> match)

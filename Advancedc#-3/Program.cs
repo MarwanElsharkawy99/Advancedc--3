@@ -32,11 +32,15 @@ internal class Program
 
         #endregion
         #region Question2
-        CustomList<int> num = new CustomList<int>();
-        num.Add(1);
-        num.Add(2);
-        num.Add(3);
-        num.Add(4);
+        List<int> list = new List<int>();
+        list.Add(1);
+        list.Add(2);
+        list.Add(3);
+        list.Add(4);
+        list.Add(5);
+
+        CustomList<int> num = new CustomList<int>( list);
+     
         Console.WriteLine(num.Exists(x => x == 3));
         Console.WriteLine(num.Find(x => x == 5));
         Console.WriteLine(num.FindIndex(x => x == 3));
